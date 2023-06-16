@@ -1,0 +1,53 @@
+<!-- Write a JavaScript code that displays text “TCE GADAG” with increasing font size in the interval of 100ms in BLUE COLOR, when the font size reaches 50pt it displays “COMPUTER SCIENCE” in BLACK color. Then the font size decreases to 5pt. -->
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Text Shrink</title>
+    <style>
+        p {
+            position: absolute; 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        var var1 = setInterval(inTimer, 500);
+        var fs = 5;   //font size
+        var ids = document.getElementById("demo");
+
+        function inTimer()    
+        {
+            ids.innerHTML = 'TCE GADG';
+            ids.setAttribute('style', "font-size: " + fs + "px; color: blue");
+            fs += 5;   
+            if (fs >= 50) 
+            {
+                clearInterval(var1);   //paused
+                var2 = setInterval(deTimer, 500);
+            }
+        }
+
+        function deTimer() //fs = 50px
+        {
+            fs -= 5;
+            ids.innerHTML = 'COMPUTER SCIENCE';
+            ids.setAttribute('style', "font-size: " + fs + "px; color: black");
+            if (fs == 5) 
+            {
+                clearInterval(var2); //paused
+                var1 = setInterval(inTimer, 500);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

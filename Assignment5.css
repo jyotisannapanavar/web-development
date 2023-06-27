@@ -1,0 +1,22 @@
+student{
+    display:block; margin-top:10px; color:rgb(193, 193, 239);
+    }
+    USN{
+    display:block; margin-left:10px;font-size:14pt; color:rgb(14, 6, 6);
+    }
+    name{
+    display:block; margin-left:20px;font-size:14pt; color:rgb(0, 174, 255);
+    }
+    college{
+    display:block; margin-left:20px;font-size:12pt; color:rgb(245, 109, 109);
+    }
+    branch{
+    display:block; margin-left:20px;font-size:12pt; color:rgb(237, 89, 237);
+    }
+    year{
+    display:block; margin-left:20px;font-size:14pt; color:rgb(111, 243, 111);
+    }
+    e-mail{
+    display:block; margin-left:20px;font-size:12pt; color:rgb(242, 101, 188);
+    
+    }
